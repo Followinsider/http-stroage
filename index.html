@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP缓存demo</title>
+    <style>
+        img {
+            display: inline-block;
+            max-width: 10%;
+            height: auto;
+            margin-left: 20px;
+        }
+        .strongCacheArea, .noStrongCacheArea {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>强制缓存</h1>
+    <div class="strongCacheArea">
+        <img src="./img1.jpg" alt="good luck">
+        <img src="./img2.jpg" alt="good luck">
+    </div>
+    <h1>协商缓存</h1>
+    <div class="noStrongCacheArea">
+        <img src="./img3.jpg" alt="good luck">
+        <img src="./img4.jpg" alt="good luck">
+    </div>
+</body>
+
+</html>
